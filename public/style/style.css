@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+    background-color: rgb(27, 27, 37);
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+.container {
+    max-width: 250px;
+    position: relative;
+    padding: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    background: linear-gradient(90deg, rgba(126, 1, 115, 1) 0%, rgba(0, 121, 145, 1) 100%);
+}
+
+.container-border {
+    padding: 25px 0;
+    background-color: rgb(27, 27, 37);
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+
+.inputs {
+    padding: 0 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 6px 0;
+    margin: 10px 0;
+    text-align: center;
+    border: 0;
+    outline: none;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+input:hover {
+    background-color: #ddd;
+}
+
+.sex {
+    display: flex;
+}
+
+.sex .man,
+.woman {
+    width: 100%;
+    padding: 6px 0;
+    margin: 10px 0;
+}
+
+button {
+    cursor: pointer;
+    width: 100%;
+    padding: 5px 0;
+    margin: 10px 0;
+}
+
+
+/*** Hide Input Number Arrows ***/
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
